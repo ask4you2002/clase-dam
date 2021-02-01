@@ -23,6 +23,10 @@ public class Alumno {
         return nombre;
     }
     
+    public void listNombre() {
+        System.out.println(nombre);
+    }
+    
     /**
      * Cambia el nombre del alumno
      */
@@ -36,7 +40,10 @@ public class Alumno {
     public void imprimeDetalles() {
         System.out.println(nombre + " (" + numeroMatricula + ") - " + edad + " años");
     }
-    
+    public String returnDatos() {
+        String datos = (nombre + " (" + numeroMatricula + ") - " + edad + " años");
+        return datos;
+    }
     /**
      * Devuelve el nombre de usuario que el alumno debe configurar
      * en su cuenta de Github en formato de 7 caracateres
